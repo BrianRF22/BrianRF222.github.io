@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Registros Anecdóticos</title>
+    <link rel="shortcut icon" href="/sarad/estilo/img/logo.png">
+    <link rel="stylesheet" href="/sarad/estilo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/sarad/estilo/iconos/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #003300; /* Verde oscuro */
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0; /* Eliminar margen por defecto */
+            display: flex; /* Usar flex para centrar contenido */
+            flex-direction: column; /* Colocar en columna */
+            min-height: 100vh; /* Asegurar que ocupe toda la altura */
+        }
+        header {
+            background-color: #004d00; /* Verde más claro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid gold;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            flex: 1; /* Ocupa el espacio restante */
+        }
+        .creators {
+            display: flex;
+            justify-content: center; /* Centrar los contenedores de creadores */
+            margin-top: 40px;
+            flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+        }
+        .creator {
+            background-color: #004d00; /* Verde más claro */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border: 3px solid gold; /* Borde dorado */
+            margin: 10px; /* Espacio entre contenedores */
+        }
+        .creator img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #004d00; /* Verde más claro */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        a.btn {
+            background-color: #006600; /* Verde medio */
+            color: white;
+            border: 2px solid gold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: pulse 1.5s infinite; /* Animación en el botón */
+            display: inline-block; /* Asegurando que el enlace se comporte como botón */
+            padding: 10px 20px; /* Espaciado en el botón */
+            margin: 20px; /* Espaciado para separación */
+        }
+
+        a.btn:hover {
+            background-color: #007700; /* Verde más oscuro */
+            transform: translateY(-3px);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a la Aplicación de Registros Anecdóticos</h1>
+</header>
+
+<div class="content">
+    <p>El propósito de esta aplicación es facilitar la documentación y seguimiento de registros anecdóticos en entornos educativos o profesionales, permitiendo un análisis profundo del desarrollo y comportamiento de los participantes.</p>
+
+    <h2>Creadores</h2>
+    <div class="creators">
+        <div class="creator">
+            <img src="javier.jpg" alt="Foto de Juan Pérez">
+            <h3>Javier Vera</h3>
+            <p>Edad: 16 años</p>
+        </div>
+        <div class="creator">
+            <img src="brian.jpg" alt="Foto de María López">
+            <h3>Brian Riquelme</h3>
+            <p>Edad: 17 años</p>
+        </div>
+        <div class="creator">
+            <img src="edu.jpg" alt="Foto de Carlos Ramírez">
+            <h3>Eduardo Altamirano</h3>
+            <p>Edad: 17 años</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="index.php" class="btn">Ir al Menú</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Aplicación de Registros Anecdóticos</p>
+</footer>
+
+</body>
+</html>
